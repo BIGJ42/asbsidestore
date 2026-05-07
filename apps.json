@@ -4,8 +4,8 @@
   "apiVersion": "v2",
   "subtitle": "After School Beis SideStore repo",
   "description": "ASB SideStore internal tesing repo.",
-  "iconURL": "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icon.png",
-  "website": "https://github.com/YOUR_USERNAME/YOUR_REPO",
+  "iconURL": "https://asbsidestore.pages.dev/icon.png",
+  "website": "https://github.com/bigj42",
   "tintColor": "#1A4A5C",
   "featuredApps": [
     "com.joshc.asb"
@@ -17,7 +17,7 @@
       "developerName": "Josh Calvert",
       "subtitle": "Tagline",
       "localizedDescription": "App innit.",
-      "iconURL": "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/apps/exampleapp/icon.png",
+      "iconURL": "https://asbsidestore.pages.dev/icon.png",
       "tintColor": "#1A4A5C",
       "category": "utilities",
       "screenshots": [
