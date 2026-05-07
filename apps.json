@@ -1,0 +1,56 @@
+{
+  "name": "ASB Sidestore repo",
+  "identifier": "com.yourname.sidestore-repo",
+  "apiVersion": "v2",
+  "subtitle": "After School Beis SideStore repo",
+  "description": "ASB SideStore internal tesing repo.",
+  "iconURL": "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icon.png",
+  "website": "https://github.com/YOUR_USERNAME/YOUR_REPO",
+  "tintColor": "#007AFF",
+  "featuredApps": [
+    "com.joshc.asb"
+  ],
+  "apps": [
+    {
+      "name": "ASB",
+      "bundleIdentifier": "com.joshc.asb",
+      "developerName": "Josh Calvert",
+      "subtitle": "Tagline",
+      "localizedDescription": "App innit.",
+      "iconURL": "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/apps/exampleapp/icon.png",
+      "tintColor": "#007AFF",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/apps/exampleapp/screenshots/1.png",
+        "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/apps/exampleapp/screenshots/2.png"
+      ],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-05-07T00:00:00Z",
+          "localizedDescription": "Initial release.",
+          "downloadURL": "https://github.com/YOUR_USERNAME/YOUR_REPO/releases/download/v1.0.0/ExampleApp.ipa",
+          "size": 1024000,
+          "minOSVersion": "16.0",
+          "maxOSVersion": "18.9"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    }
+  ],
+  "news": [
+    {
+      "title": "Repo launched!",
+      "identifier": "repo-launch-2026",
+      "caption": "Welcome to the repo.",
+      "tintColor": "#007AFF",
+      "imageURL": "",
+      "date": "2026-05-07T00:00:00Z",
+      "notify": false
+    }
+  ],
+  "userInfo": {}
+}
