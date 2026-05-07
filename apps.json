@@ -16,7 +16,7 @@
       "bundleIdentifier": "com.joshc.asb",
       "developerName": "Josh Calvert",
       "subtitle": "Tagline",
-      "localizedDescription": "App innit.",
+      "localizedDescription": "App description goes here.",
       "iconURL": "https://asbsidestore.pages.dev/icon.png",
       "tintColor": "#1A4A5C",
       "category": "utilities",
@@ -27,21 +27,23 @@
       "versions": [
         {
           "version": "1.1",
+          "buildVersion": "1",
+          "marketingVersion": "1.1 (1)",
           "date": "2026-05-07T14:00:00Z",
-          "localizedDescription": "Bug fixes and improvements.",
+          "localizedDescription": "Fix some issues.",
           "downloadURL": "https://asbsidestore.pages.dev/asb2.ipa",
           "size": 12044895,
-          "minOSVersion": "26.0",
-          "maxOSVersion": "26.4.2"
+          "minOSVersion": "12.0"
         },
         {
           "version": "1.0",
+          "buildVersion": "1",
+          "marketingVersion": "1.0 (1)",
           "date": "2026-05-07T00:00:00Z",
           "localizedDescription": "Initial release.",
           "downloadURL": "https://asbsidestore.pages.dev/asb1.ipa",
           "size": 12045684,
-          "minOSVersion": "26.0",
-          "maxOSVersion": "26.4.2"
+          "minOSVersion": "12.0"
         }
       ],
       "appPermissions": {
@@ -50,16 +52,6 @@
       }
     }
   ],
-  "news": [
-    {
-      "title": "Repo launched!",
-      "identifier": "repo-launch-2026",
-      "caption": "Welcome to the repo.",
-      "tintColor": "#1A4A5C",
-      "imageURL": "https://asbsidestore.pages.dev/icon.png",
-      "date": "2026-05-07T00:00:00Z",
-      "notify": false
-    }
-  ],
+  "news": [],
   "userInfo": {}
 }
