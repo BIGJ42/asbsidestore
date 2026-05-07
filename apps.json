@@ -29,8 +29,8 @@
           "version": "1.0.0",
           "date": "2026-05-07T00:00:00Z",
           "localizedDescription": "Initial release.",
-          "downloadURL": "https://github.com/YOUR_USERNAME/YOUR_REPO/releases/download/v1.0.0/ExampleApp.ipa",
-          "size": 1024000,
+          "downloadURL": "https://asbsidestore.pages.dev/asb1.ipa",
+          "size": 12045684,
           "minOSVersion": "16.0",
           "maxOSVersion": "26.4.2"
         }
