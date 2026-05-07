@@ -6,7 +6,7 @@
   "description": "ASB SideStore internal tesing repo.",
   "iconURL": "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icon.png",
   "website": "https://github.com/YOUR_USERNAME/YOUR_REPO",
-  "tintColor": "#007AFF",
+  "tintColor": "#1A4A5C",
   "featuredApps": [
     "com.joshc.asb"
   ],
@@ -18,7 +18,7 @@
       "subtitle": "Tagline",
       "localizedDescription": "App innit.",
       "iconURL": "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/apps/exampleapp/icon.png",
-      "tintColor": "#007AFF",
+      "tintColor": "#1A4A5C",
       "category": "utilities",
       "screenshots": [
         "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/apps/exampleapp/screenshots/1.png",
@@ -32,7 +32,7 @@
           "downloadURL": "https://github.com/YOUR_USERNAME/YOUR_REPO/releases/download/v1.0.0/ExampleApp.ipa",
           "size": 1024000,
           "minOSVersion": "16.0",
-          "maxOSVersion": "18.9"
+          "maxOSVersion": "26.4"
         }
       ],
       "appPermissions": {
@@ -46,7 +46,7 @@
       "title": "Repo launched!",
       "identifier": "repo-launch-2026",
       "caption": "Welcome to the repo.",
-      "tintColor": "#007AFF",
+      "tintColor": "#1A4A5C",
       "imageURL": "",
       "date": "2026-05-07T00:00:00Z",
       "notify": false
