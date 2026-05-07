@@ -26,6 +26,16 @@
       ],
       "versions": [
         {
+          "version": "1.2",
+          "buildVersion": "1",
+          "marketingVersion": "1.2 (1)",
+          "date": "2026-05-07T14:00:00Z",
+          "localizedDescription": "Fix some issues.",
+          "downloadURL": "https://asbsidestore.pages.dev/asb3.ipa",
+          "size": 12044895,
+          "minOSVersion": "12.0"
+        },
+        {
           "version": "1.1",
           "buildVersion": "1",
           "marketingVersion": "1.1 (1)",
