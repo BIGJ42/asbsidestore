@@ -21,12 +21,12 @@
       "tintColor": "#1A4A5C",
       "category": "utilities",
       "screenshots": [
-        "https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fuk.linkedin.com%2Fin%2Frabbi-hillel-gruber-780678b5&ved=0CBYQjRxqFwoTCJjMo5nBp5QDFQAAAAAdAAAAABAF&opi=89978449",
+        "https://asbsidestore.pages.dev/grubs.jpeg",
         "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/apps/exampleapp/screenshots/2.png"
       ],
       "versions": [
         {
-          "version": "1.0",
+          "version": "1.0.0",
           "date": "2026-05-07T00:00:00Z",
           "localizedDescription": "Initial release.",
           "downloadURL": "https://asbsidestore.pages.dev/asb1.ipa",
