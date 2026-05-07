@@ -43,7 +43,6 @@
     "minOSVersion": "26.0",
     "maxOSVersion": "26.4.2"
   }
-]
       ],
       "appPermissions": {
         "entitlements": [],
