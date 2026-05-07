@@ -47,7 +47,7 @@
       "identifier": "repo-launch-2026",
       "caption": "Welcome to the repo.",
       "tintColor": "#1A4A5C",
-      "imageURL": "",
+      "imageURL": "https://asbsidestore.pages.dev/icon.png",
       "date": "2026-05-07T00:00:00Z",
       "notify": false
     }
