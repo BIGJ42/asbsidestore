@@ -24,25 +24,26 @@
         "https://asbsidestore.pages.dev/grubs.jpeg",
         "https://asbsidestore.pages.dev/lichtig.jpg"
       ],
-      "versions": [
-        {
-          "version": "1.0",
-          "date": "2026-05-07T00:00:00Z",
-          "localizedDescription": "Initial release.",
-          "downloadURL": "https://asbsidestore.pages.dev/asb1.ipa",
-          "size": 12045684,
-          "minOSVersion": "26.0",
-          "maxOSVersion": "26.4.2"
-        },
-        {
-          "version": "1.1",
-          "date": "2026-05-07T00:00:00Z",
-          "localizedDescription": "Initial release.",
-          "downloadURL": "https://asbsidestore.pages.dev/asb2.ipa",
-          "size": 12044895,
-          "minOSVersion": "26.0",
-          "maxOSVersion": "26.4.2"
-        }
+"versions": [
+  {
+    "version": "1.1",
+    "date": "2026-05-07T12:00:00Z",
+    "localizedDescription": "Updated release.",
+    "downloadURL": "https://asbsidestore.pages.dev/asb2.ipa",
+    "size": 12044895,
+    "minOSVersion": "26.0",
+    "maxOSVersion": "26.4.2"
+  },
+  {
+    "version": "1.0",
+    "date": "2026-05-07T00:00:00Z",
+    "localizedDescription": "Initial release.",
+    "downloadURL": "https://asbsidestore.pages.dev/asb1.ipa",
+    "size": 12045684,
+    "minOSVersion": "26.0",
+    "maxOSVersion": "26.4.2"
+  }
+]
       ],
       "appPermissions": {
         "entitlements": [],
