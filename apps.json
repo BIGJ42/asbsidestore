@@ -31,7 +31,16 @@
           "localizedDescription": "Initial release.",
           "downloadURL": "https://asbsidestore.pages.dev/asb1.ipa",
           "size": 12045684,
-          "minOSVersion": "16.0",
+          "minOSVersion": "26.0",
+          "maxOSVersion": "26.4.2"
+        },
+        {
+          "version": "1.1",
+          "date": "2026-05-07T00:00:00Z",
+          "localizedDescription": "Initial release.",
+          "downloadURL": "https://asbsidestore.pages.dev/asb2.ipa",
+          "size": 12045684,
+          "minOSVersion": "26.0",
           "maxOSVersion": "26.4.2"
         }
       ],
