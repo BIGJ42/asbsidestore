@@ -60,13 +60,13 @@ jobs:
 
               new_version = {
                   "version": version_str,
-                  "buildVersion": str(number),
-                  "marketingVersion": f"{version_str} ({number})",
+                  "buildVersion": str(version_str),
+                  "marketingVersion": f"{version_str} ({version_str})",
                   "date": now,
                   "localizedDescription": "New release.",
                   "downloadURL": download_url,
                   "size": size,
-                  "minOSVersion": "16.0"
+                  "minOSVersion": "26.0"
               }
 
               # Insert at the front (newest first)
