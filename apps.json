@@ -26,16 +26,6 @@
       ],
       "versions": [
         {
-          "version": "1.7",
-          "buildVersion": "8",
-          "marketingVersion": "1.7 (8)",
-          "date": "2026-05-15T17:59:07Z",
-          "localizedDescription": "New release.",
-          "downloadURL": "https://asbsidestore.pages.dev/asb8.ipa",
-          "size": 12361003,
-          "minOSVersion": "16.0"
-        },
-        {
           "version": "1.6",
           "buildVersion": "1.6",
           "marketingVersion": "1.6 (1.6)",
