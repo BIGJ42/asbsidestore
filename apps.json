@@ -26,6 +26,16 @@
       ],
       "versions": [
         {
+          "version": "1.5",
+          "buildVersion": "1.5",
+          "marketingVersion": "1.5 (1.5)",
+          "date": "2026-05-15T14:00:00Z",
+          "localizedDescription": "Fix CSV Support",
+          "downloadURL": "https://asbsidestore.pages.dev/asb6.ipa",
+          "size": 12348577,
+          "minOSVersion": "26.0"
+        },
+        {
           "version": "1.4",
           "buildVersion": "2",
           "marketingVersion": "1.4 (2)",
