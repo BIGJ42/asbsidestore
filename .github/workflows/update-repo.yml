@@ -1,0 +1,90 @@
+name: Update apps.json on new IPA
+
+on:
+  push:
+    paths:
+      - 'asb*.ipa'
+
+jobs:
+  update-apps-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect new IPA and update apps.json
+        run: |
+          python3 << 'EOF'
+          import json
+          import os
+          import subprocess
+          import re
+          from datetime import datetime, timezone
+
+          # Find which IPA files were added in this push
+          result = subprocess.run(
+              ['git', 'diff', '--name-only', '--diff-filter=A', 'HEAD~1', 'HEAD'],
+              capture_output=True, text=True
+          )
+          changed = result.stdout.strip().splitlines()
+          new_ipas = [f for f in changed if re.match(r'^asb\d+\.ipa$', f)]
+
+          if not new_ipas:
+              print("No new asbX.ipa files detected, skipping.")
+              exit(0)
+
+          with open('apps.json', 'r') as f:
+              data = json.load(f)
+
+          app = data['apps'][0]
+          existing_versions = app.get('versions', [])
+          existing_urls = {v['downloadURL'] for v in existing_versions}
+
+          for ipa in new_ipas:
+              number = int(re.search(r'\d+', ipa).group())
+              download_url = f"https://asbsidestore.pages.dev/{ipa}"
+
+              if download_url in existing_urls:
+                  print(f"Version for {ipa} already exists, skipping.")
+                  continue
+
+              size = os.path.getsize(ipa)
+              now = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+
+              # Derive version string from IPA number (e.g. asb8.ipa -> 1.7)
+              # Increment minor version: asb1=1.0, asb2=1.1, ..., asbN=1.(N-1)
+              minor = number - 1
+              version_str = f"1.{minor}"
+
+              new_version = {
+                  "version": version_str,
+                  "buildVersion": str(number),
+                  "marketingVersion": f"{version_str} ({number})",
+                  "date": now,
+                  "localizedDescription": "New release.",
+                  "downloadURL": download_url,
+                  "size": size,
+                  "minOSVersion": "16.0"
+              }
+
+              # Insert at the front (newest first)
+              existing_versions.insert(0, new_version)
+              print(f"Added version {version_str} for {ipa}")
+
+          app['versions'] = existing_versions
+
+          with open('apps.json', 'w') as f:
+              json.dump(data, f, indent=2)
+
+          print("apps.json updated.")
+          EOF
+
+      - name: Commit updated apps.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add apps.json
+          git diff --cached --quiet || git commit -m "chore: update apps.json for new IPA release"
+          git push
