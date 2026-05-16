@@ -26,6 +26,16 @@
       ],
       "versions": [
         {
+          "version": "1.8",
+          "buildVersion": "1.8",
+          "marketingVersion": "1.8 (1.8)",
+          "date": "2026-05-16T21:32:22Z",
+          "localizedDescription": "New release.",
+          "downloadURL": "https://asbsidestore.pages.dev/asb9.ipa",
+          "size": 12361707,
+          "minOSVersion": "26.0"
+        },
+        {
           "version": "1.7",
           "buildVersion": "1.7",
           "marketingVersion": "1.7 (1.7)",
