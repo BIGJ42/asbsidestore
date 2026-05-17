@@ -26,6 +26,16 @@
       ],
       "versions": [
         {
+          "version": "2.0",
+          "buildVersion": "2.0",
+          "marketingVersion": "2.0 (2.0)",
+          "date": "2026-05-17T12:40:22Z",
+          "localizedDescription": "New release.",
+          "downloadURL": "https://asbsidestore.pages.dev/asb20.ipa",
+          "size": 12412380,
+          "minOSVersion": "26.0"
+        },
+        {
           "version": "1.9",
           "buildVersion": "1.9",
           "marketingVersion": "1.9 (1.9)",
