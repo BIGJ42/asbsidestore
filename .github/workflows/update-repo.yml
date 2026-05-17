@@ -23,7 +23,6 @@ jobs:
           import re
           from datetime import datetime, timezone
 
-          # Find which IPA files were added in this push
           result = subprocess.run(
               ['git', 'diff', '--name-only', '--diff-filter=A', 'HEAD~1', 'HEAD'],
               capture_output=True, text=True
@@ -53,10 +52,12 @@ jobs:
               size = os.path.getsize(ipa)
               now = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 
-              # Derive version string from IPA number (e.g. asb8.ipa -> 1.7)
-              # Increment minor version: asb1=1.0, asb2=1.1, ..., asbN=1.(N-1)
-              minor = number - 1
-              version_str = f"1.{minor}"
+              # asb1-19: 1.(N-1)  e.g. asb8 -> 1.7
+              # asb20+:  major.minor  e.g. asb20 -> 2.0, asb21 -> 2.1, asb30 -> 3.0
+              if number >= 20:
+                  version_str = f"{number // 10}.{number % 10}"
+              else:
+                  version_str = f"1.{number - 1}"
 
               new_version = {
                   "version": version_str,
@@ -69,7 +70,6 @@ jobs:
                   "minOSVersion": "26.0"
               }
 
-              # Insert at the front (newest first)
               existing_versions.insert(0, new_version)
               print(f"Added version {version_str} for {ipa}")
 
