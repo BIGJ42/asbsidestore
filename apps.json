@@ -26,6 +26,16 @@
       ],
       "versions": [
         {
+          "version": "2.2",
+          "buildVersion": "2.2",
+          "marketingVersion": "2.2 (2.2)",
+          "date": "2026-05-17T17:19:34Z",
+          "localizedDescription": "New release.",
+          "downloadURL": "https://asbsidestore.pages.dev/asb22.ipa",
+          "size": 12411863,
+          "minOSVersion": "26.0"
+        },
+        {
           "version": "2.1",
           "buildVersion": "2.1",
           "marketingVersion": "2.1 (2.1)",
